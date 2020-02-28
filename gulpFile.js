@@ -1,3 +1,4 @@
+var gulp = require('gulp')
 var sass = require('gulp-sass')
 
 function sassCompile(cb) {
@@ -5,8 +6,6 @@ function sassCompile(cb) {
         .pipe(sass()) // Converts Sass to CSS with gulp-sass
         .pipe(gulp.dest('app/css'));
     cb();
-.pipe(plugins.livereload()); //add live reload of page
-.pipe(gulp.dest('build')).on('error', gutil.log)
 }
 
 function watch() {

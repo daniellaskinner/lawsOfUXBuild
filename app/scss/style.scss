@@ -1,0 +1,19 @@
+$font: 'Roboto';
+$colour: rgb(34, 34, 34);
+
+body {
+  font-family: $font;
+}
+
+row {
+  background-color: $colour;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+}
+
+//.menu {
+//  padding-top
+//}
